@@ -40,3 +40,49 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let nav = document.querySelectorAll("nav a")
+nav[0].textContent = (siteContent["nav"]["nav-item-1"])
+nav[1].textContent = (siteContent["nav"]["nav-item-2"])
+nav[2].textContent = (siteContent["nav"]["nav-item-3"])
+nav[3].textContent = (siteContent["nav"]["nav-item-4"])
+nav[4].textContent = (siteContent["nav"]["nav-item-5"])
+nav[5].textContent = (siteContent["nav"]["nav-item-6"])
+
+let cta = document.getElementById("cta-img");
+cta.setAttribute('src', siteContent["cta"]["img-src"])
+
+let button = document.querySelector(".cta-text button");
+button.textContent = (siteContent["cta"]["button"])
+
+let h1 = document.querySelector(".cta-text h1");
+h1.textContent = (siteContent["cta"]["h1"])
+
+
+let featuresH4 = document.querySelector(".top-content h4");
+featuresH4.textContent = (siteContent["main-content"]["features-h4"])
+
+let aboutH4 = document.querySelector(".top-content h4");
+aboutH4.textContent = (siteContent["main-content"]["about-h4"])
+
+
+let middlePic = document.getElementById("middle-img");
+middlePic.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+let contactH4 = document.querySelector(".contact h4");
+contactH4.textContent = (siteContent["contact"]["contact-h4"])
+
+let address = document.querySelector(".contact p");
+address.textContent = (siteContent["contact"]["address"])
+
+let phone = document.querySelector(".contact p");
+phone.textContent = (siteContent["contact"]["phone"])
+
+let email = document.querySelector(".contact p");
+email.textContent = (siteContent["contact"]["email"])
+
+
+
+let footer = document.querySelector(".footer p");
+footer.textContent = (siteContent["footer"]["copyright"])
