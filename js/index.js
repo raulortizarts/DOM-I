@@ -59,30 +59,54 @@ let h1 = document.querySelector(".cta-text h1");
 h1.textContent = (siteContent["cta"]["h1"])
 
 
-let featuresH4 = document.querySelector(".top-content h4");
-featuresH4.textContent = (siteContent["main-content"]["features-h4"])
+let featuresH4 = document.querySelectorAll(".top-content h4");
+featuresH4[0].textContent = (siteContent["main-content"]["features-h4"])
 
-let aboutH4 = document.querySelector(".top-content h4");
-aboutH4.textContent = (siteContent["main-content"]["about-h4"])
+let featurescont = document.querySelectorAll(".top-content p");
+featurescont[0].textContent = (siteContent["main-content"]["features-content"])
+
+let aboutH4 = document.querySelectorAll(".top-content h4");
+aboutH4[1].textContent = (siteContent["main-content"]["about-h4"])
+
+let aboutcont = document.querySelectorAll(".top-content p");
+aboutcont[1].textContent = (siteContent["main-content"]["about-content"])
 
 
 let middlePic = document.getElementById("middle-img");
 middlePic.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
+let servicesH4 = document.querySelectorAll(".bottom-content h4");
+servicesH4[0].textContent = (siteContent["main-content"]["services-h4"])
+
+let servicescont = document.querySelectorAll(".bottom-content p");
+servicescont[0].textContent = (siteContent["main-content"]["services-content"])
+
+let productH4 = document.querySelectorAll(".bottom-content h4");
+productH4[1].textContent = (siteContent["main-content"]["product-h4"])
+
+let productcont = document.querySelectorAll(".bottom-content p");
+productcont[1].textContent = (siteContent["main-content"]["product-content"])
+
+let visionH4 = document.querySelectorAll(".bottom-content h4");
+visionH4[2].textContent = (siteContent["main-content"]["vision-h4"])
+
+let visioncont = document.querySelectorAll(".bottom-content p");
+visioncont[2].textContent = (siteContent["main-content"]["vision-content"])
+
+
 let contactH4 = document.querySelector(".contact h4");
 contactH4.textContent = (siteContent["contact"]["contact-h4"])
 
-let address = document.querySelector(".contact p");
-address.textContent = (siteContent["contact"]["address"])
+let address = document.querySelectorAll(".contact p");
+address[0].textContent = (siteContent["contact"]["address"])
 
-let phone = document.querySelector(".contact p");
-phone.textContent = (siteContent["contact"]["phone"])
+let phone = document.querySelectorAll(".contact p");
+phone[1].textContent = (siteContent["contact"]["phone"])
 
-let email = document.querySelector(".contact p");
-email.textContent = (siteContent["contact"]["email"])
+let email = document.querySelectorAll(".contact p");
+email[2].textContent = (siteContent["contact"]["email"])
 
 
-
-let footer = document.querySelector(".footer p");
+let footer = document.querySelector("footer p");
 footer.textContent = (siteContent["footer"]["copyright"])
